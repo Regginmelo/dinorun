@@ -23,5 +23,6 @@ limit_smoothed = true
 [node name="Floor" parent="." instance=ExtResource("3_krgpg")]
 
 [node name="mobtimer" type="Timer" parent="."]
+wait_time = 2.0
 
 [connection signal="timeout" from="mobtimer" to="." method="_on_mobtimer_timeout"]
