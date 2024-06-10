@@ -11,18 +11,17 @@ script = ExtResource("1_08w8x")
 [node name="Background" parent="." instance=ExtResource("1_gg66n")]
 
 [node name="Player" parent="." instance=ExtResource("2_ti7h2")]
-position = Vector2(176, 527)
+position = Vector2(163, 486)
 scale = Vector2(0.727273, 0.75)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-limit_left = 10000000
+position = Vector2(567.875, -216)
 limit_top = 0
 limit_bottom = 0
-limit_smoothed = true
-
-[node name="Floor" parent="." instance=ExtResource("3_krgpg")]
 
 [node name="mobtimer" type="Timer" parent="."]
 wait_time = 2.0
+
+[node name="Floor" parent="." instance=ExtResource("3_krgpg")]
 
 [connection signal="timeout" from="mobtimer" to="." method="_on_mobtimer_timeout"]

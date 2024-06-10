@@ -34,7 +34,7 @@ theme_override_fonts/font = ExtResource("1_gif20")
 theme_override_font_sizes/font_size = 24
 text = "Press to Play"
 
-[node name="Timer" type="Timer" parent="."]
+[node name="ScoreTimer" type="Timer" parent="."]
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="ScoreTimer" to="." method="_on_timer_timeout"]

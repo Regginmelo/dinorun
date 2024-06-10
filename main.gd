@@ -10,10 +10,8 @@ func _ready():
 	screen_size =get_window().size
 	PlayerInitialPosition = $Player.position
 	GHUD.start_game_btn.connect(new_game)
-	
-	
+
 func new_game():
-	print ('tlacua')
 	$Player.position = PlayerInitialPosition
 	$Floor.position.x = 0
 
@@ -22,7 +20,7 @@ func game_over():
 	GHUD.update_highscore_label()
 	
 func _process(delta):
-	$Floor.position.x = $Player.position.x -150
+	$Floor.position.x = $Player.position.x - 150
 
 
 func _on_mobtimer_timeout():
